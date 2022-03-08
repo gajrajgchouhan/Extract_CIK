@@ -1,3 +1,4 @@
+import logging
 import warnings
 import numpy as np
 import pandas as pd
@@ -6,6 +7,8 @@ import os
 from pathlib import Path
 from tqdm.auto import tqdm
 import shutil
+
+logging.basicConfig(filename="download_fillings.log", level=logging.DEBUG)
 
 try:
     shutil.rmtree("./download_filings")
@@ -22,6 +25,7 @@ FORMS = ["10-K", "10-Q", "8-K"]
 for (index, *row) in tqdm(CIKS.iterrows(), total=len(CIKS), desc="Downloading filings"):
     if pd.isnull([row[0][1]]):
         continue
+    logging.debug((row[0][0], "started"))
     for form in tqdm(FORMS, total=len(FORMS), desc="Downloading forms", leave=False):
-        dl.get(form, row[0][1], after="2017-01-01", include_amends=False)
-    break
+        logging.debug(("Downloaded", dl.get(form, row[0][1], after="2017-01-01", include_amends=False), "fillings"))
+    logging.debug((row[0][0], "completed"))
