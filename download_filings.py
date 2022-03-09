@@ -27,5 +27,11 @@ for (index, *row) in tqdm(CIKS.iterrows(), total=len(CIKS), desc="Downloading fi
         continue
     logging.debug((row[0][0], "started"))
     for form in tqdm(FORMS, total=len(FORMS), desc="Downloading forms", leave=False):
-        logging.debug(("Downloaded", dl.get(form, row[0][1], after="2017-01-01", include_amends=False), "fillings"))
+        logging.debug(
+            (
+                "Downloaded",
+                dl.get(form, row[0][1], after="2017-01-01", include_amends=False, download_details=False),
+                "fillings",
+            )
+        )
     logging.debug((row[0][0], "completed"))
