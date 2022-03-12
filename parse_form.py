@@ -56,8 +56,7 @@ def clean_unicode(txt):
     """
     Remove unnecessary tags, and clean unicode characters
     """
-    cleaner = bleach.Cleaner(tags=["table", "tr", "td"], attributes=[], styles=[], strip=True)
-    txt = cleaner.clean(txt)
+    txt = bleach.clean(txt, tags=["div", "table", "tr", "th", "td"], attributes=[], styles=[], strip=True)
     txt = re.sub(compile(r"&#\d+;", re.S | re.M), "", txt)
     txt = re.sub(compile(r"\\u[0-9a-fA-F]+", re.S | re.M), "", txt)
     return txt
@@ -107,6 +106,10 @@ for k, v in tqdm(final.items()):
         v["table"].extend(re.findall(table_re, i))
 
     txt = [re.sub(table_re, "", i) for i in txt]
-    v["txt"] = [i for i in txt]
+
+    final_txt = []
+    for i in txt:
+        final_txt.extend(re.split(r"<div>(.*?)</div>", i))
+    v["txt"] = [i for i in final_txt if len(i) > 0]
 
 json.dump(final, open("final_ara.json", "w"), indent=4)
