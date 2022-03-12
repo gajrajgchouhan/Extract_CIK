@@ -7,11 +7,27 @@ import html
 # "backend/scraping/download_filings/sec-edgar-filings/0001023731/10-K/0001023731-19-000037/full-submission.txt"
 # https://airccj.org/CSCP/vol7/csit76615.pdf
 
+RE_S_I = re.S | re.I
+
 
 def compile(p, f):
     return re.compile(p, f)
 
 
+def clean_unicode(txt):
+    """
+    Remove unnecessary tags, and clean unicode characters
+
+    bleach.clean only keeps the allowed tags and removes everything else (including css)
+    then remove any unicode chars
+    """
+    txt = bleach.clean(txt, tags=["div", "table", "tr", "th", "td"], attributes=[], styles=[], strip=True)
+    txt = re.sub(compile(r"&#\d+;", re.S | re.M), "", txt)
+    txt = re.sub(compile(r"\\u[0-9a-fA-F]+", re.S | re.M), "", txt)
+    return txt
+
+
+# patterns for removing the metadata
 patterns_for_remove = [
     (r"<TYPE>GRAPHIC.*?</TEXT>", re.S),
     (r"<TYPE>EXCEL.*?</TEXT>", re.S),
@@ -44,72 +60,67 @@ patterns_for_remove = [
 patterns_for_remove = [re.compile(i, j) for i, j in patterns_for_remove]
 
 # reading file
-txt = open("./full-submission.txt", "r").read()
+filling_txt = open("./full-submission.txt", "r").read()
 
 for pattern in tqdm(patterns_for_remove, desc="Remove document metadata", total=len(patterns_for_remove)):
-    txt = re.sub(pattern, "", txt)
-
-RE_S_I = re.S | re.I
-
-
-def clean_unicode(txt):
-    """
-    Remove unnecessary tags, and clean unicode characters
-    """
-    txt = bleach.clean(txt, tags=["div", "table", "tr", "th", "td"], attributes=[], styles=[], strip=True)
-    txt = re.sub(compile(r"&#\d+;", re.S | re.M), "", txt)
-    txt = re.sub(compile(r"\\u[0-9a-fA-F]+", re.S | re.M), "", txt)
-    return txt
-
-
-# txt = html.unescape(txt)
+    filling_txt = re.sub(pattern, "", filling_txt)
 
 # Renaming Item Heading
-txt = re.sub(compile(r"> +Item|>Item|^Item", re.S | re.I | re.M), ">°Item", txt)
+filling_txt = re.sub(compile(r"> +Item|>Item|^Item", re.S | re.I | re.M), ">°Item", filling_txt)
+
 # removing extra spaces
-txt = re.sub(compile(r"\t{2,}", re.S), "", txt)
-txt = re.sub(compile(r" {2,}", re.S), "", txt)
+filling_txt = re.sub(compile(r"\t{2,}", re.S), "", filling_txt)
+filling_txt = re.sub(compile(r" {2,}", re.S), "", filling_txt)
 
-final = {
-    "Item 1": {"txt": re.findall(compile(r"°Item 1[^AB0-6].*?°Item", RE_S_I), txt)},
-    "Item 1A": {"txt": re.findall(compile(r"°Item 1A.*?°Item", RE_S_I), txt)},
-    "Item 1B": {"txt": re.findall(compile(r"°Item 1B.*?°Item", RE_S_I), txt)},
-    "Item 2": {"txt": re.findall(compile(r"°Item 2.*?°Item", RE_S_I), txt)},
-    "Item 3": {"txt": re.findall(compile(r"°Item 3.*?°Item", RE_S_I), txt)},
-    "Item 4": {"txt": re.findall(compile(r"°Item 4.*?°Item", RE_S_I), txt)},
-    "Item X": {"txt": re.findall(compile(r"°Item X.*?°Item", RE_S_I), txt)},
-    "Item 5": {"txt": re.findall(compile(r"°Item 5.*?°Item", RE_S_I), txt)},
-    "Item 6": {"txt": re.findall(compile(r"°Item 6.*?°Item", RE_S_I), txt)},
-    "Item 7": {"txt": re.findall(compile(r"°Item 7[^A].*?°Item", RE_S_I), txt)},
-    "Item 7A": {"txt": re.findall(compile(r"°Item 7A.*?°Item", RE_S_I), txt)},
-    "Item 8": {"txt": re.findall(compile(r"°Item 8.*?°Item", RE_S_I), txt)},
-    "Item 9": {"txt": re.findall(compile(r"°Item 9[^AB].*?°Item", RE_S_I), txt)},
-    "Item 9A": {"txt": re.findall(compile(r"°Item 9A.*?°Item", RE_S_I), txt)},
-    "Item 9B": {"txt": re.findall(compile(r"°Item 9B.*?°Item", RE_S_I), txt)},
-    "Item 10": {"txt": re.findall(compile(r"°Item 10.*?°Item", RE_S_I), txt)},
-    "Item 11": {"txt": re.findall(compile(r"°Item 11.*?°Item", RE_S_I), txt)},
-    "Item 12": {"txt": re.findall(compile(r"°Item 12.*?°Item", RE_S_I), txt)},
-    "Item 13": {"txt": re.findall(compile(r"°Item 13.*?°Item", RE_S_I), txt)},
-    "Item 14": {"txt": re.findall(compile(r"°Item 14.*?(°Item|</TEXT>)", RE_S_I), txt)},
-    "Item 15": {"txt": re.findall(compile(r"°Item 15.*?</TEXT>", RE_S_I), txt)},
+section_dict = {
+    "Item 1": {"text": re.findall(compile(r"°Item 1[^AB0-6].*?°Item", RE_S_I), filling_txt)},
+    "Item 1A": {"text": re.findall(compile(r"°Item 1A.*?°Item", RE_S_I), filling_txt)},
+    "Item 1B": {"text": re.findall(compile(r"°Item 1B.*?°Item", RE_S_I), filling_txt)},
+    "Item 2": {"text": re.findall(compile(r"°Item 2.*?°Item", RE_S_I), filling_txt)},
+    "Item 3": {"text": re.findall(compile(r"°Item 3.*?°Item", RE_S_I), filling_txt)},
+    "Item 4": {"text": re.findall(compile(r"°Item 4.*?°Item", RE_S_I), filling_txt)},
+    "Item X": {"text": re.findall(compile(r"°Item X.*?°Item", RE_S_I), filling_txt)},
+    "Item 5": {"text": re.findall(compile(r"°Item 5.*?°Item", RE_S_I), filling_txt)},
+    "Item 6": {"text": re.findall(compile(r"°Item 6.*?°Item", RE_S_I), filling_txt)},
+    "Item 7": {"text": re.findall(compile(r"°Item 7[^A].*?°Item", RE_S_I), filling_txt)},
+    "Item 7A": {"text": re.findall(compile(r"°Item 7A.*?°Item", RE_S_I), filling_txt)},
+    "Item 8": {"text": re.findall(compile(r"°Item 8.*?°Item", RE_S_I), filling_txt)},
+    "Item 9": {"text": re.findall(compile(r"°Item 9[^AB].*?°Item", RE_S_I), filling_txt)},
+    "Item 9A": {"text": re.findall(compile(r"°Item 9A.*?°Item", RE_S_I), filling_txt)},
+    "Item 9B": {"text": re.findall(compile(r"°Item 9B.*?°Item", RE_S_I), filling_txt)},
+    "Item 10": {"text": re.findall(compile(r"°Item 10.*?°Item", RE_S_I), filling_txt)},
+    "Item 11": {"text": re.findall(compile(r"°Item 11.*?°Item", RE_S_I), filling_txt)},
+    "Item 12": {"text": re.findall(compile(r"°Item 12.*?°Item", RE_S_I), filling_txt)},
+    "Item 13": {"text": re.findall(compile(r"°Item 13.*?°Item", RE_S_I), filling_txt)},
+    "Item 14": {"text": re.findall(compile(r"°Item 14.*?(°Item|</TEXT>)", RE_S_I), filling_txt)},
+    # "Item 15": {"text": re.findall(compile(r"°Item 15.*?</TEXT>", RE_S_I), filling_txt)},
 }
+# item 15 is not necessary for now and it keeps conflicting with item 1
 
-json.dump(txt, open("test.txt", "w"), indent=4)
+# json.dump(txt, open("test.txt", "w"), indent=4)
 
-table_re = compile(r"<table>.*?</table>", RE_S_I)
-for k, v in tqdm(final.items()):
-    txt = v["txt"]
-    v["table"] = []
-    txt = [clean_unicode(i) for i in txt]
+pattern_for_extract_table = compile(r"<table>.*?</table>", RE_S_I)
+for section_name, section_txt in tqdm(section_dict.items()):
+    if len(section_txt["text"]) > 0:
+        # the zeroth index matches with the table of contents! which is not needed
+        section_txt["text"] = [section_txt["text"][1]]
+    text = section_txt["text"]
+    section_txt["table"] = []
+    text = [clean_unicode(i) for i in text]
 
-    for i in txt:
-        v["table"].extend(re.findall(table_re, i))
+    # extracting tables
+    for i in text:
+        section_txt["table"].extend(re.findall(pattern_for_extract_table, i))
 
-    txt = [re.sub(table_re, "", i) for i in txt]
+    # remove the tables from text
+    text = [re.sub(pattern_for_extract_table, "", i) for i in text]
 
-    final_txt = []
-    for i in txt:
-        final_txt.extend(re.split(r"<div>(.*?)</div>", i))
-    v["txt"] = [i for i in final_txt if len(i) > 0]
+    # splitting the text to paragraphs by using divs
+    final_text = []
+    for i in text:
+        final_text.extend(re.split(r"<div>(.*?)</div>", i))
 
-json.dump(final, open("final_ara.json", "w"), indent=4)
+    # ignore small text
+    section_txt["text"] = [i for i in final_text if len(i) > 30]
+
+json.dump(section_dict, open("final_ara.json", "w"), indent=4)
