@@ -1,12 +1,14 @@
-import os
+import logging
 from pathlib import Path
 import re
 import pandas as pd
 
 from pymongo import MongoClient
+from pymongo.database import Database
+from parse_form import parse_form
 
 client = MongoClient("127.0.0.1", 27017)
-db = client["digital-alpha"]
+db: Database = client["digital-alpha"]
 
 """
 Collection names
@@ -14,17 +16,31 @@ Collection names
 1. companies
 """
 
-# tickers: pd.DataFrame = pd.read_csv("./tickers.csv", dtype=str)[["Company", "cik", "tickers"]]
-# db["companies"].insert_many(tickers.to_dict(orient="records"))
+tickers: pd.DataFrame = pd.read_csv("./tickers.csv", dtype=str)[["Company", "cik", "tickers"]]
+db.drop_collection("companies")
+db.create_collection("companies")
+db["companies"].insert_many(tickers.to_dict(orient="records"))
 
 """
 2. filings
 """
 
-# collection = db.collection_name
-# folder_path = "download_filings/sec-edgar-filings"
+db.drop_collection("fillings")
+db.create_collection("fillings")
 
-# for path in Path(folder_path).glob("**/*.txt"):
-#     pattern = rf"{folder_path}/(\d+)/(\d{{1,2}}-[QK])/(\d+-\d{{2}}-\d+)/full-submission.txt"
-#     CIK, form_number, ASN = re.findall(pattern, str(path))[0]
-#     print(CIK, form_number, ASN)
+folder_path = "download_filings/sec-edgar-filings"
+pattern_of_path = rf"{folder_path}/(\d+)/(\d{{1,2}}-[QK])/(\d+-\d{{2}}-\d+)/full-submission.txt"
+
+
+for path in Path(folder_path).glob("**/*.txt"):
+    CIK, form_number, ASN = re.findall(pattern_of_path, str(path))[0]
+    logging.debug(f"{CIK}, {form_number}, {ASN}")
+    filling_txt = open(path).read()
+    section_dict = parse_form(filling_txt)
+    db.fillings.update_one(
+        {
+            "cik": CIK,
+        },
+        {"$push": {"fillings": {"form_number": form_number, "asn": ASN, "parsed": section_dict}}},
+        upsert=True,
+    )
