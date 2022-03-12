@@ -7,12 +7,6 @@ import html
 # "backend/scraping/download_filings/sec-edgar-filings/0001023731/10-K/0001023731-19-000037/full-submission.txt"
 # https://airccj.org/CSCP/vol7/csit76615.pdf
 
-txt = open("./full-submission.txt", "r").read()
-
-patterns_for_extract = {
-    "10-K": (r"<TYPE>10-K.*?</TEXT>", re.DOTALL),
-}
-
 
 def compile(p, f):
     return re.compile(p, f)
@@ -49,44 +43,70 @@ patterns_for_remove = [
 
 patterns_for_remove = [re.compile(i, j) for i, j in patterns_for_remove]
 
-for pattern in tqdm(patterns_for_remove, total=len(patterns_for_remove)):
+# reading file
+txt = open("./full-submission.txt", "r").read()
+
+for pattern in tqdm(patterns_for_remove, desc="Remove document metadata", total=len(patterns_for_remove)):
     txt = re.sub(pattern, "", txt)
 
+RE_S_I = re.S | re.I
+
+
+def clean_unicode(txt):
+    """
+    Remove unnecessary tags, and clean unicode characters
+    """
+    cleaner = bleach.Cleaner(tags=["table", "tr", "td"], attributes=[], styles=[], strip=True)
+    txt = cleaner.clean(txt)
+    txt = re.sub(compile(r"&#\d+;", re.S | re.M), "", txt)
+    txt = re.sub(compile(r"\\u[0-9a-fA-F]+", re.S | re.M), "", txt)
+    return txt
+
+
 # txt = html.unescape(txt)
-cleaner = bleach.Cleaner(tags=["table", "tr", "td"], attributes=[], styles=[], strip=True)
-txt = cleaner.clean(txt)
-txt = re.sub(compile(r"> +Item|>Item|^Item", re.S | re.I | re.M), "Item", txt)
-txt = re.sub(compile(r"\s{2,}", re.S), "", txt)
-txt = re.sub(r"&#\d+;", "", txt)
+
+# Renaming Item Heading
+txt = re.sub(compile(r"> +Item|>Item|^Item", re.S | re.I | re.M), ">°Item", txt)
+# removing extra spaces
+txt = re.sub(compile(r"\t{2,}", re.S), "", txt)
+txt = re.sub(compile(r" {2,}", re.S), "", txt)
 
 final = {
-    "Item 1": {"txt": re.findall(compile(r"Item 1[^AB0-5].*?Item", re.S | re.I), txt)},
-    "Item 1A": {"txt": re.findall(compile(r"Item 1A.*?Item", re.S | re.I), txt)},
-    "Item 1B": {"txt": re.findall(compile(r"Item 1B.*?Item", re.S | re.I), txt)},
-    "Item 2": {"txt": re.findall(compile(r"Item 2.*?Item", re.S | re.I), txt)},
-    "Item 3": {"txt": re.findall(compile(r"Item 3.*?Item", re.S | re.I), txt)},
-    "Item 4": {"txt": re.findall(compile(r"Item 4.*?Item", re.S | re.I), txt)},
-    "Item X": {"txt": re.findall(compile(r"Item X.*?Item", re.S | re.I), txt)},
-    "Item 5": {"txt": re.findall(compile(r"Item 5.*?Item", re.S | re.I), txt)},
-    "Item 6": {"txt": re.findall(compile(r"Item 6.*?Item", re.S | re.I), txt)},
-    "Item 7": {"txt": re.findall(compile(r"Item 7[^A].*?Item", re.S | re.I), txt)},
-    "Item 7A": {"txt": re.findall(compile(r"Item 7A.*?Item", re.S | re.I), txt)},
-    "Item 8": {"txt": re.findall(compile(r"Item 8.*?Item", re.S | re.I), txt)},
-    "Item 9": {"txt": re.findall(compile(r"Item 9[^AB].*?Item", re.S | re.I), txt)},
-    "Item 9A": {"txt": re.findall(compile(r"Item 9A.*?Item", re.S | re.I), txt)},
-    "Item 9B": {"txt": re.findall(compile(r"Item 9B.*?Item", re.S | re.I), txt)},
-    "Item 10": {"txt": re.findall(compile(r"Item 10.*?Item", re.S | re.I), txt)},
-    "Item 11": {"txt": re.findall(compile(r"Item 11.*?Item", re.S | re.I), txt)},
-    "Item 12": {"txt": re.findall(compile(r"Item 12.*?Item", re.S | re.I), txt)},
-    "Item 13": {"txt": re.findall(compile(r"Item 13.*?Item", re.S | re.I), txt)},
-    "Item 14": {"txt": re.findall(compile(r"Item 14.*?(Item|</TEXT>)", re.S | re.I), txt)},
-    "Item 15": {"txt": re.findall(compile(r"Item 14.*?</TEXT>", re.S | re.I), txt)},
+    "Item 1": {"txt": re.findall(compile(r"°Item 1[^AB0-6].*?°Item", RE_S_I), txt)},
+    "Item 1A": {"txt": re.findall(compile(r"°Item 1A.*?°Item", RE_S_I), txt)},
+    "Item 1B": {"txt": re.findall(compile(r"°Item 1B.*?°Item", RE_S_I), txt)},
+    "Item 2": {"txt": re.findall(compile(r"°Item 2.*?°Item", RE_S_I), txt)},
+    "Item 3": {"txt": re.findall(compile(r"°Item 3.*?°Item", RE_S_I), txt)},
+    "Item 4": {"txt": re.findall(compile(r"°Item 4.*?°Item", RE_S_I), txt)},
+    "Item X": {"txt": re.findall(compile(r"°Item X.*?°Item", RE_S_I), txt)},
+    "Item 5": {"txt": re.findall(compile(r"°Item 5.*?°Item", RE_S_I), txt)},
+    "Item 6": {"txt": re.findall(compile(r"°Item 6.*?°Item", RE_S_I), txt)},
+    "Item 7": {"txt": re.findall(compile(r"°Item 7[^A].*?°Item", RE_S_I), txt)},
+    "Item 7A": {"txt": re.findall(compile(r"°Item 7A.*?°Item", RE_S_I), txt)},
+    "Item 8": {"txt": re.findall(compile(r"°Item 8.*?°Item", RE_S_I), txt)},
+    "Item 9": {"txt": re.findall(compile(r"°Item 9[^AB].*?°Item", RE_S_I), txt)},
+    "Item 9A": {"txt": re.findall(compile(r"°Item 9A.*?°Item", RE_S_I), txt)},
+    "Item 9B": {"txt": re.findall(compile(r"°Item 9B.*?°Item", RE_S_I), txt)},
+    "Item 10": {"txt": re.findall(compile(r"°Item 10.*?°Item", RE_S_I), txt)},
+    "Item 11": {"txt": re.findall(compile(r"°Item 11.*?°Item", RE_S_I), txt)},
+    "Item 12": {"txt": re.findall(compile(r"°Item 12.*?°Item", RE_S_I), txt)},
+    "Item 13": {"txt": re.findall(compile(r"°Item 13.*?°Item", RE_S_I), txt)},
+    "Item 14": {"txt": re.findall(compile(r"°Item 14.*?(°Item|</TEXT>)", RE_S_I), txt)},
+    "Item 15": {"txt": re.findall(compile(r"°Item 15.*?</TEXT>", RE_S_I), txt)},
 }
 
-table_re = compile(r"<table>.*?</table>", re.S | re.I)
+json.dump(txt, open("test.txt", "w"), indent=4)
+
+table_re = compile(r"<table>.*?</table>", RE_S_I)
 for k, v in tqdm(final.items()):
-    txt = " ".join(v["txt"])
-    v["table"] = re.findall(table_re, txt)
-    v["txt"] = re.sub(compile(r"<[^>]*>", re.S), "", txt)
+    txt = v["txt"]
+    v["table"] = []
+    txt = [clean_unicode(i) for i in txt]
+
+    for i in txt:
+        v["table"].extend(re.findall(table_re, i))
+
+    txt = [re.sub(table_re, "", i) for i in txt]
+    v["txt"] = [i for i in txt]
 
 json.dump(final, open("final_ara.json", "w"), indent=4)
