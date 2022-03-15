@@ -1,0 +1,2373 @@
+[{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6880"
+  },
+  "Company": "2U INC",
+  "cik": {
+    "$numberDouble": "NaN"
+  },
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6881"
+  },
+  "Company": "30DC INC",
+  "cik": "0001118974",
+  "tickers": "TDCH"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6882"
+  },
+  "Company": "3D PIONEER SYSTEMS INC",
+  "cik": "0001556753",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6883"
+  },
+  "Company": "8X8 INC",
+  "cik": "0001023731",
+  "tickers": "EGHT"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6884"
+  },
+  "Company": "A10 NETWORKS INC",
+  "cik": "0001580808",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6885"
+  },
+  "Company": "ACI WORLDWIDE INC",
+  "cik": "0000935036",
+  "tickers": "ACIW"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6886"
+  },
+  "Company": "ACTUA CORP",
+  "cik": "0001085621",
+  "tickers": "ICGE"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6887"
+  },
+  "Company": "ADEXA INC",
+  "cik": "0001119691",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6888"
+  },
+  "Company": "ADOBE INC",
+  "cik": "0000796343",
+  "tickers": "ADBE"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6889"
+  },
+  "Company": "ADVANCED VOICE RECOGNITION",
+  "cik": "0001342936",
+  "tickers": "SMYD"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd688a"
+  },
+  "Company": "ADVANT-E CORP",
+  "cik": "0001407847",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd688b"
+  },
+  "Company": "ADVANTEGO CORP",
+  "cik": "0000869531",
+  "tickers": "MYNG"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd688c"
+  },
+  "Company": "AGILYSYS INC",
+  "cik": "0000078749",
+  "tickers": "AGYS"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd688d"
+  },
+  "Company": "ALARM.COM HOLDINGS INC",
+  "cik": "0001459200",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd688e"
+  },
+  "Company": "ALLDIGITAL HOLDINGS INC",
+  "cik": "0001389217",
+  "tickers": "ADGL"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd688f"
+  },
+  "Company": "ALTAIR ENGINEERING INC",
+  "cik": "0001701732",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6890"
+  },
+  "Company": "ALTERYX INC",
+  "cik": "0001689923",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6891"
+  },
+  "Company": "AMERICAN SECURITY RES CORP",
+  "cik": "0001085069",
+  "tickers": "ARSC"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6892"
+  },
+  "Company": "AMERICAN SOFTWARE  -CL A",
+  "cik": "0000713425",
+  "tickers": "AMSWA"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6893"
+  },
+  "Company": "ANAPLAN INC",
+  "cik": "0001540755",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6894"
+  },
+  "Company": "ANSYS INC",
+  "cik": "0001013462",
+  "tickers": "ANSS"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6895"
+  },
+  "Company": "APPFOLIO INC",
+  "cik": "0001433195",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6896"
+  },
+  "Company": "APPIAN CORP",
+  "cik": "0001441683",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6897"
+  },
+  "Company": "APPLIED VISUAL SCIENCES INC",
+  "cik": "0000873198",
+  "tickers": "GDTI"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6898"
+  },
+  "Company": "APT SYSTEMS INC",
+  "cik": "0001543739",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6899"
+  },
+  "Company": "ASANA INC",
+  "cik": "0001477720",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd689a"
+  },
+  "Company": "ASPEN TECHNOLOGY INC",
+  "cik": "0000356942",
+  "tickers": "AZPN"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd689b"
+  },
+  "Company": "ASURE SOFTWARE INC",
+  "cik": "0000884144",
+  "tickers": "ASUR"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd689c"
+  },
+  "Company": "AUDIOEYE INC",
+  "cik": "0001362190",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd689d"
+  },
+  "Company": "AUTODESK INC",
+  "cik": "0000769397",
+  "tickers": "ADSK"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd689e"
+  },
+  "Company": "AUTOMATIC DATA PROCESSING",
+  "cik": "0000008670",
+  "tickers": "ADP"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd689f"
+  },
+  "Company": "AVALARA INC",
+  "cik": "0001348036",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68a0"
+  },
+  "Company": "AVAYA HLDGS CORP",
+  "cik": "0001418100",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68a1"
+  },
+  "Company": "AWARE INC",
+  "cik": "0000845188",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68a2"
+  },
+  "Company": "BARRACUDA NETWORKS INC",
+  "cik": "0001348334",
+  "tickers": "CUDA"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68a3"
+  },
+  "Company": "BENEFITFOCUS INC",
+  "cik": "0001576169",
+  "tickers": "BNFT"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68a4"
+  },
+  "Company": "BENTLEY SYSTEMS INC",
+  "cik": "0001031308",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68a5"
+  },
+  "Company": "BIGCOMMERCE HOLDIN INC",
+  "cik": "0001626450",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68a6"
+  },
+  "Company": "BILL.COM HOLDINGS INC",
+  "cik": "0001786352",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68a7"
+  },
+  "Company": "BIO-KEY INTERNATIONAL INC",
+  "cik": {
+    "$numberDouble": "NaN"
+  },
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68a8"
+  },
+  "Company": "BLACK BOX CORP",
+  "cik": "0000849547",
+  "tickers": "BBOX"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68a9"
+  },
+  "Company": "BLACKBAUD INC",
+  "cik": "0001280058",
+  "tickers": "BLKB"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68aa"
+  },
+  "Company": "BLACKBOXSTOCKS INC",
+  "cik": "0001567900",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68ab"
+  },
+  "Company": "BLACKLINE INC",
+  "cik": "0001666134",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68ac"
+  },
+  "Company": "BLAQCLOUDS INC",
+  "cik": {
+    "$numberDouble": "NaN"
+  },
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68ad"
+  },
+  "Company": "BOTTOMLINE TECHNOLOGIES INC",
+  "cik": "0001073349",
+  "tickers": "EPAY"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68ae"
+  },
+  "Company": "BOX INC",
+  "cik": "0001372612",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68af"
+  },
+  "Company": "BOXLIGHT CORP",
+  "cik": "0001624512",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68b0"
+  },
+  "Company": "BRAVATEK SOLUTIONS INC",
+  "cik": "0001449574",
+  "tickers": "ECRY"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68b1"
+  },
+  "Company": "BRIDGELINE DIGITAL INC",
+  "cik": "0001378590",
+  "tickers": "BLIN"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68b2"
+  },
+  "Company": "BRIDGEWAY NATIONAL CORP",
+  "cik": "0001567771",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68b3"
+  },
+  "Company": "B-SCADA INC",
+  "cik": "0001341878",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68b4"
+  },
+  "Company": "BSQUARE CORP",
+  "cik": "0001054721",
+  "tickers": "BSQR"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68b5"
+  },
+  "Company": "BUSYBOX.COM INC",
+  "cik": {
+    "$numberDouble": "NaN"
+  },
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68b6"
+  },
+  "Company": "CADENCE DESIGN SYSTEMS INC",
+  "cik": "0000813672",
+  "tickers": "CDNS"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68b7"
+  },
+  "Company": "CDK GLOBAL INC",
+  "cik": "0001609702",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68b8"
+  },
+  "Company": "CERENCE INC",
+  "cik": "0001768267",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68b9"
+  },
+  "Company": "CERIDIAN CORP",
+  "cik": "0000109758",
+  "tickers": "ARB"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68ba"
+  },
+  "Company": "CERIDIAN HCM HOLDING",
+  "cik": "0001725057",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68bb"
+  },
+  "Company": "CHANGSHENG INTERNATIONAL GRO",
+  "cik": "0001451797",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68bc"
+  },
+  "Company": "CHANNELADVISOR CORP",
+  "cik": "0001172721",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68bd"
+  },
+  "Company": "CHINA YANYUN YHU NTL ED GRP",
+  "cik": {
+    "$numberDouble": "NaN"
+  },
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68be"
+  },
+  "Company": "CICERO INC",
+  "cik": "0000945384",
+  "tickers": "CICN"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68bf"
+  },
+  "Company": "CIMETRIX INC",
+  "cik": "0001395938",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68c0"
+  },
+  "Company": "CIPHERLOC CORP",
+  "cik": "0001022505",
+  "tickers": "NSCT"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68c1"
+  },
+  "Company": "CITRIX SYSTEMS INC",
+  "cik": "0000877890",
+  "tickers": "CTXS"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68c2"
+  },
+  "Company": "CLEANSPARK INC",
+  "cik": "0000827876",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68c3"
+  },
+  "Company": "CLICKSTREAM CORP",
+  "cik": "0001393548",
+  "tickers": "MCCO"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68c4"
+  },
+  "Company": "CLONE ALGO TECHNOLOGIES INC",
+  "cik": "0001582589",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68c5"
+  },
+  "Company": "CLOUDERA INC",
+  "cik": "0001535379",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68c6"
+  },
+  "Company": "CLOUDFLARE INC",
+  "cik": "0001477333",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68c7"
+  },
+  "Company": "CLOUDWARD INC",
+  "cik": {
+    "$numberDouble": "NaN"
+  },
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68c8"
+  },
+  "Company": "CODE REBEL CORP",
+  "cik": "0001613011",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68c9"
+  },
+  "Company": "COM GUARD.COM INC",
+  "cik": {
+    "$numberDouble": "NaN"
+  },
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68ca"
+  },
+  "Company": "COMMVAULT SYSTEMS INC",
+  "cik": "0001169561",
+  "tickers": "CVLT"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68cb"
+  },
+  "Company": "CORNERSTONE ONDEMAND INC",
+  "cik": "0001401680",
+  "tickers": "CSOD"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68cc"
+  },
+  "Company": "COUPA SOFTWARE INC",
+  "cik": "0001385867",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68cd"
+  },
+  "Company": "CROWDSTRIKE HOLDINGS INC",
+  "cik": "0001535527",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68ce"
+  },
+  "Company": "CYBERFORT SOFTWARE INC",
+  "cik": "0001522787",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68cf"
+  },
+  "Company": "CYREN LTD",
+  "cik": "0001084577",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68d0"
+  },
+  "Company": "DATADOG INC",
+  "cik": "0001561550",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68d1"
+  },
+  "Company": "DATTO HOLDING CORP",
+  "cik": "0001724570",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68d2"
+  },
+  "Company": "DEALERADVANCE INC",
+  "cik": "0001133598",
+  "tickers": "SGHT"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68d3"
+  },
+  "Company": "DIGILITI MONEY GROUP INC",
+  "cik": "0001487906",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68d4"
+  },
+  "Company": "DIGIMARC CORP",
+  "cik": "0001438231",
+  "tickers": "DMRC"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68d5"
+  },
+  "Company": "DIGITAL TURBINE INC",
+  "cik": "0000317788",
+  "tickers": "MNDL"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68d6"
+  },
+  "Company": "DOCUSIGN INC",
+  "cik": "0001261333",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68d7"
+  },
+  "Company": "DOMO INC",
+  "cik": "0001129236",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68d8"
+  },
+  "Company": "DROPBOX INC",
+  "cik": "0001467623",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68d9"
+  },
+  "Company": "DUCK CREEK TECHNOL INC",
+  "cik": "0001160951",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68da"
+  },
+  "Company": "DYNATRACE INC",
+  "cik": "0001773383",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68db"
+  },
+  "Company": "E2OPEN INC",
+  "cik": "0001540400",
+  "tickers": "EOPN"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68dc"
+  },
+  "Company": "EBIX INC",
+  "cik": "0000814549",
+  "tickers": "EBIX"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68dd"
+  },
+  "Company": "ECOARK HOLDINGS INC",
+  "cik": "0001437491",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68de"
+  },
+  "Company": "EGAIN CORP",
+  "cik": "0001066194",
+  "tickers": "EGAN"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68df"
+  },
+  "Company": "ELASTIC NETWORKS INC",
+  "cik": "0001088242",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68e0"
+  },
+  "Company": "ELASTIC NV",
+  "cik": "0001707753",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68e1"
+  },
+  "Company": "ELCOM INTERNATIONAL INC",
+  "cik": "0000900096",
+  "tickers": "ELCO"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68e2"
+  },
+  "Company": "ENTERPRISE INFORMATICS INC",
+  "cik": "0000813747",
+  "tickers": "SPCO"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68e3"
+  },
+  "Company": "ENVESTNET INC",
+  "cik": "0001337619",
+  "tickers": "ENV"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68e4"
+  },
+  "Company": "EVERBRIDGE INC",
+  "cik": "0001437352",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68e5"
+  },
+  "Company": "EVOLVING SYSTEMS INC",
+  "cik": "0001052054",
+  "tickers": "EVOL"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68e6"
+  },
+  "Company": "EZENIA INC",
+  "cik": "0000943894",
+  "tickers": "EZEN"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68e7"
+  },
+  "Company": "FAIR ISAAC CORP",
+  "cik": "0000814547",
+  "tickers": "FICO"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68e8"
+  },
+  "Company": "FALCONSTOR SOFTWARE INC",
+  "cik": "0000922521",
+  "tickers": "FALC"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68e9"
+  },
+  "Company": "FANTASY ACES DAILY FANTASY",
+  "cik": "0001653115",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68ea"
+  },
+  "Company": "FASTLY INC",
+  "cik": "0001517413",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68eb"
+  },
+  "Company": "FIREEYE INC",
+  "cik": "0001370880",
+  "tickers": "FEYE"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68ec"
+  },
+  "Company": "FIVE9 INC",
+  "cik": "0001288847",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68ed"
+  },
+  "Company": "FLEXSHARES IBOXX 3-YR TAR FD",
+  "cik": {
+    "$numberDouble": "NaN"
+  },
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68ee"
+  },
+  "Company": "FLEXSHARES IBOXX 5-YR TAR FD",
+  "cik": {
+    "$numberDouble": "NaN"
+  },
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68ef"
+  },
+  "Company": "FORTINET INC",
+  "cik": "0001262039",
+  "tickers": "FTNT"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68f0"
+  },
+  "Company": "FRIENDFINDER NETWORKS INC",
+  "cik": "0001451951",
+  "tickers": "FFN"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68f1"
+  },
+  "Company": "GIVEMEPOWER CORP",
+  "cik": "0001064722",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68f2"
+  },
+  "Company": "GRANDPARENTS.COM INC",
+  "cik": "0001020475",
+  "tickers": "PBME"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68f3"
+  },
+  "Company": "GREEN POLKADOT BOX INC",
+  "cik": "0001159464",
+  "tickers": "MFLW"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68f4"
+  },
+  "Company": "GSE SYSTEMS INC",
+  "cik": "0000944480",
+  "tickers": "GVP"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68f5"
+  },
+  "Company": "GTY TECHNOLOGY HOLDINGS",
+  "cik": "0001682325",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68f6"
+  },
+  "Company": "GUIDEWIRE SOFTWARE INC",
+  "cik": "0001528396",
+  "tickers": "GWRE"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68f7"
+  },
+  "Company": "HOPTO INC",
+  "cik": "0001021435",
+  "tickers": "HPTO"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68f8"
+  },
+  "Company": "HRSOFT INC",
+  "cik": {
+    "$numberDouble": "NaN"
+  },
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68f9"
+  },
+  "Company": "HUBSPOT INC",
+  "cik": "0001404655",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68fa"
+  },
+  "Company": "IBSG INTERNATIONAL INC",
+  "cik": "0001031905",
+  "tickers": "IGII"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68fb"
+  },
+  "Company": "IDEANOMICS INC",
+  "cik": "0000837852",
+  "tickers": "YOD"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68fc"
+  },
+  "Company": "IMAGEWARE SYSTEMS INC",
+  "cik": "0000941685",
+  "tickers": "IW"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68fd"
+  },
+  "Company": "INFORMATION RESOURCES INC",
+  "cik": "0000714278",
+  "tickers": "IRIC"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68fe"
+  },
+  "Company": "INTEGRATED BUSINESS SYS &SVC",
+  "cik": "0001040863",
+  "tickers": "IBSS"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd68ff"
+  },
+  "Company": "INTELLIGENT SYSTEM CORP",
+  "cik": "0000320340",
+  "tickers": "INS"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6900"
+  },
+  "Company": "INTELLINETICS INC",
+  "cik": "0001081745",
+  "tickers": "GWIV"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6901"
+  },
+  "Company": "INTERMAP TECHNOLOGIES CORP",
+  "cik": "0001285170",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6902"
+  },
+  "Company": "INTERNATIONAL LEADERS CAP CO",
+  "cik": "0001470550",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6903"
+  },
+  "Company": "INTRUSION INC",
+  "cik": "0000736012",
+  "tickers": "INTZ"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6904"
+  },
+  "Company": "INTUIT INC",
+  "cik": "0000896878",
+  "tickers": "INTU"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6905"
+  },
+  "Company": "INUVO INC",
+  "cik": "0000829323",
+  "tickers": "THK"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6906"
+  },
+  "Company": "IRONCLAD ENCRYPTION CORP",
+  "cik": "0001455926",
+  "tickers": "BTHI"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6907"
+  },
+  "Company": "ISHARES IBOXX HIGH YLD CP BD",
+  "cik": {
+    "$numberDouble": "NaN"
+  },
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6908"
+  },
+  "Company": "ISHARES IBOXX INVST GR CP BD",
+  "cik": {
+    "$numberDouble": "NaN"
+  },
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6909"
+  },
+  "Company": "ISIGN SOLUTIONS INC",
+  "cik": "0000727634",
+  "tickers": "CICI"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd690a"
+  },
+  "Company": "ISOCIALY INC",
+  "cik": "0001716726",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd690b"
+  },
+  "Company": "ISSUER DIRECT CORP",
+  "cik": "0000843006",
+  "tickers": "ISDR"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd690c"
+  },
+  "Company": "IVEDA SOLUTIONS INC",
+  "cik": "0001397183",
+  "tickers": "IVDA"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd690d"
+  },
+  "Company": "J2 GLOBAL INC",
+  "cik": "0001084048",
+  "tickers": "JCOM"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd690e"
+  },
+  "Company": "JACK IN THE BOX INC",
+  "cik": "0001064030",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd690f"
+  },
+  "Company": "JAMF HOLDING CORP",
+  "cik": "0001721947",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6910"
+  },
+  "Company": "JDA SOFTWARE GROUP INC",
+  "cik": "0001006892",
+  "tickers": "JDAS"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6911"
+  },
+  "Company": "JFROG LTD",
+  "cik": "0001800667",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6912"
+  },
+  "Company": "KIWIBOX COM INC",
+  "cik": "0000838796",
+  "tickers": "MAGY"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6913"
+  },
+  "Company": "KRONOS INC",
+  "cik": "0001257640",
+  "tickers": "KRO"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6914"
+  },
+  "Company": "LAWSON SOFTWARE INC",
+  "cik": "0001141517",
+  "tickers": "LWSN"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6915"
+  },
+  "Company": "LEVELBLOX INC",
+  "cik": "0001473654",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6916"
+  },
+  "Company": "LIQUI-BOX CORP",
+  "cik": "0000216430",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6917"
+  },
+  "Company": "LIQUID HOLDINGS GROUP INC",
+  "cik": "0001562594",
+  "tickers": "LIQD"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6918"
+  },
+  "Company": "LIVE MICROSYSTEMS INC",
+  "cik": {
+    "$numberDouble": "NaN"
+  },
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6919"
+  },
+  "Company": "LIVEPERSON INC",
+  "cik": "0001102993",
+  "tickers": "LPSN"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd691a"
+  },
+  "Company": "MAIL BOXES ETC",
+  "cik": "0000791014",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd691b"
+  },
+  "Company": "MANHATTAN ASSOCIATES INC",
+  "cik": "0001056696",
+  "tickers": "MANH"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd691c"
+  },
+  "Company": "MARIN SOFTWARE INC",
+  "cik": "0001389002",
+  "tickers": "MRIN"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd691d"
+  },
+  "Company": "MAX SOUND CORP",
+  "cik": "0001353499",
+  "tickers": "MAXD"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd691e"
+  },
+  "Company": "MEDALLIA INC",
+  "cik": "0001540184",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd691f"
+  },
+  "Company": "MEDALLIANCE INC",
+  "cik": {
+    "$numberDouble": "NaN"
+  },
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6920"
+  },
+  "Company": "MEDIATECHNICS CORP",
+  "cik": {
+    "$numberDouble": "NaN"
+  },
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6921"
+  },
+  "Company": "MGT CAPITAL INVESTMENTS INC",
+  "cik": "0001001601",
+  "tickers": "MSHT"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6922"
+  },
+  "Company": "MICROSOFT CORP",
+  "cik": "0000789019",
+  "tickers": "MSFT"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6923"
+  },
+  "Company": "MICROSTRATEGY INC",
+  "cik": "0001050446",
+  "tickers": "MSTR"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6924"
+  },
+  "Company": "MITEK SYSTEMS INC",
+  "cik": "0000807863",
+  "tickers": "MITK"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6925"
+  },
+  "Company": "MIX TELEMATICS LTD",
+  "cik": "0001576914",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6926"
+  },
+  "Company": "MOBILEIRON INC",
+  "cik": "0001470099",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6927"
+  },
+  "Company": "MODEL N INC",
+  "cik": "0001118417",
+  "tickers": "MODN"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6928"
+  },
+  "Company": "MONGODB INC",
+  "cik": "0001441816",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6929"
+  },
+  "Company": "MONSTER ARTS",
+  "cik": "0001423746",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd692a"
+  },
+  "Company": "NCINO INC",
+  "cik": "0001902733",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd692b"
+  },
+  "Company": "NEOMEDIA TECHNOLOGIES INC",
+  "cik": "0001022701",
+  "tickers": "NEOM"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd692c"
+  },
+  "Company": "NETSOL TECHNOLOGIES INC",
+  "cik": "0001039280",
+  "tickers": "NTWK"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd692d"
+  },
+  "Company": "NEW RELIC INC",
+  "cik": "0001448056",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd692e"
+  },
+  "Company": "NORTONLIFELOCK INC",
+  "cik": "0000849399",
+  "tickers": "SYMC"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd692f"
+  },
+  "Company": "NOTIFY TECHNOLOGY CORP",
+  "cik": "0001031980",
+  "tickers": "NTFY"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6930"
+  },
+  "Company": "NUANCE COMMUNICATIONS INC",
+  "cik": "0001002517",
+  "tickers": "NUAN"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6931"
+  },
+  "Company": "NUTANIX INC",
+  "cik": "0001618732",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6932"
+  },
+  "Company": "OBLONG INC",
+  "cik": "0000746210",
+  "tickers": "GLOWE"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6933"
+  },
+  "Company": "OKTA INC",
+  "cik": "0001660134",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6934"
+  },
+  "Company": "OMTOOL LTD",
+  "cik": "0001020579",
+  "tickers": "OMTL"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6935"
+  },
+  "Company": "ONESPAN INC",
+  "cik": "0001044777",
+  "tickers": "VDSI"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6936"
+  },
+  "Company": "ORACLE CORP",
+  "cik": "0001341439",
+  "tickers": "ORCL"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6937"
+  },
+  "Company": "PAGERDUTY INC",
+  "cik": "0001568100",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6938"
+  },
+  "Company": "PAID INC",
+  "cik": "0001017655",
+  "tickers": "PAYD"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6939"
+  },
+  "Company": "PALANTIR TECHNOLOG INC",
+  "cik": "0001321655",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd693a"
+  },
+  "Company": "PALO ALTO NETWORKS INC",
+  "cik": "0001327567",
+  "tickers": "PANW"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd693b"
+  },
+  "Company": "PARETEUM CORP",
+  "cik": "0001084384",
+  "tickers": "ETAK"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd693c"
+  },
+  "Company": "PARK CITY GROUP INC",
+  "cik": "0000050471",
+  "tickers": "PCYG"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd693d"
+  },
+  "Company": "PAYBOX CORP",
+  "cik": "0000879703",
+  "tickers": "DIRI"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd693e"
+  },
+  "Company": "PAYCHEX INC",
+  "cik": "0000723531",
+  "tickers": "PAYX"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd693f"
+  },
+  "Company": "PAYCOM SOFTWARE INC",
+  "cik": "0001590955",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6940"
+  },
+  "Company": "PAYLOCITY HOLDING CORP",
+  "cik": "0001591698",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6941"
+  },
+  "Company": "PEGASYSTEMS INC",
+  "cik": "0001013857",
+  "tickers": "PEGA"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6942"
+  },
+  "Company": "PHUNWARE INC",
+  "cik": "0001665300",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6943"
+  },
+  "Company": "PING IDENTITY HOLDING CORP",
+  "cik": "0001679826",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6944"
+  },
+  "Company": "PLURALSIGHT INC",
+  "cik": "0001725579",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6945"
+  },
+  "Company": "PRIMAL SOLUTIONS INC",
+  "cik": "0001124217",
+  "tickers": "PSOL"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6946"
+  },
+  "Company": "PROGRESS SOFTWARE CORP",
+  "cik": "0000876167",
+  "tickers": "PRGS"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6947"
+  },
+  "Company": "PROOFPOINT INC",
+  "cik": "0001212458",
+  "tickers": "PFPT"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6948"
+  },
+  "Company": "PROS HOLDINGS INC",
+  "cik": "0001392972",
+  "tickers": "PRO"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6949"
+  },
+  "Company": "PTC INC",
+  "cik": "0000857005",
+  "tickers": "PTC"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd694a"
+  },
+  "Company": "PULSE EVOLUTION CORP",
+  "cik": "0001583138",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd694b"
+  },
+  "Company": "Q2 HOLDINGS INC",
+  "cik": "0001410384",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd694c"
+  },
+  "Company": "QAD INC",
+  "cik": "0001036188",
+  "tickers": "QADI"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd694d"
+  },
+  "Company": "QUALYS INC",
+  "cik": "0001107843",
+  "tickers": "QLYS"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd694e"
+  },
+  "Company": "QUANTGATE SYSTEMS INC",
+  "cik": {
+    "$numberDouble": "NaN"
+  },
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd694f"
+  },
+  "Company": "QUMU CORP",
+  "cik": "0000892482",
+  "tickers": "QUMU"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6950"
+  },
+  "Company": "RAADR INC",
+  "cik": "0001384365",
+  "tickers": "PTOO"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6951"
+  },
+  "Company": "RAND WORLDWIDE INC",
+  "cik": "0000852437",
+  "tickers": "AVSO"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6952"
+  },
+  "Company": "RAPID7 INC",
+  "cik": "0001560327",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6953"
+  },
+  "Company": "REALNETWORKS INC",
+  "cik": "0001046327",
+  "tickers": "RNWK"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6954"
+  },
+  "Company": "REALPAGE INC",
+  "cik": "0001286225",
+  "tickers": "RP"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6955"
+  },
+  "Company": "RIGHTSCORP INC",
+  "cik": "0001506270",
+  "tickers": "RIHT"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6956"
+  },
+  "Company": "RINGCENTRAL INC",
+  "cik": "0001384905",
+  "tickers": "RNG"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6957"
+  },
+  "Company": "RIOT BLOCKCHAIN INC",
+  "cik": "0001167419",
+  "tickers": "APNB"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6958"
+  },
+  "Company": "ROCKETFUEL BLOCKCHAIN INC",
+  "cik": "0000823546",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6959"
+  },
+  "Company": "RORINE INTL HOLDING CORP",
+  "cik": "0001423586",
+  "tickers": "QPRJ"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd695a"
+  },
+  "Company": "ROSETTA STONE INC",
+  "cik": "0001351285",
+  "tickers": "RST"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd695b"
+  },
+  "Company": "SAILPOINT TECHNO HLDG",
+  "cik": "0001627857",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd695c"
+  },
+  "Company": "SALESFORCE.COM INC",
+  "cik": "0001108524",
+  "tickers": "CRM"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd695d"
+  },
+  "Company": "SCIENT INC",
+  "cik": "0001158019",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd695e"
+  },
+  "Company": "SEACHANGE INTERNATIONAL INC",
+  "cik": "0001019671",
+  "tickers": "SEAC"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd695f"
+  },
+  "Company": "SECUREWORKS CORP",
+  "cik": "0001468666",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6960"
+  },
+  "Company": "SERVICENOW INC",
+  "cik": "0001373715",
+  "tickers": "NOW"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6961"
+  },
+  "Company": "SHARPSPRING INC",
+  "cik": "0001506439",
+  "tickers": "SMTP"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6962"
+  },
+  "Company": "SHOTSPOTTER INC",
+  "cik": "0001362853",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6963"
+  },
+  "Company": "SIMTROL INC",
+  "cik": "0000846775",
+  "tickers": "SMRL"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6964"
+  },
+  "Company": "SITO MOBILE LTD",
+  "cik": "0001157817",
+  "tickers": "SITO"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6965"
+  },
+  "Company": "SKYBOX INTL INC",
+  "cik": {
+    "$numberDouble": "NaN"
+  },
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6966"
+  },
+  "Company": "SLACK TECHNOLOGIES INC",
+  "cik": "0001764925",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6967"
+  },
+  "Company": "SMARTMETRIC INC",
+  "cik": "0001301991",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6968"
+  },
+  "Company": "SMARTSHEET INC",
+  "cik": "0001366561",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6969"
+  },
+  "Company": "SMITH MICRO SOFTWARE INC",
+  "cik": "0000948708",
+  "tickers": "SMSI"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd696a"
+  },
+  "Company": "SNOWFLAKE INC",
+  "cik": "0001640147",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd696b"
+  },
+  "Company": "SOFTECH INC",
+  "cik": "0000354260",
+  "tickers": "SOFT"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd696c"
+  },
+  "Company": "SOLARWINDS CORP",
+  "cik": "0001739942",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd696d"
+  },
+  "Company": "SONIC FOUNDRY INC",
+  "cik": "0001029744",
+  "tickers": "SOFO"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd696e"
+  },
+  "Company": "SPLUNK INC",
+  "cik": "0001353283",
+  "tickers": "SPLK"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd696f"
+  },
+  "Company": "SPROUT SOCIAL INC",
+  "cik": "0001517375",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6970"
+  },
+  "Company": "SPS COMMERCE INC",
+  "cik": "0001092699",
+  "tickers": "SPSC"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6971"
+  },
+  "Company": "SS&C TECHNOLOGIES HLDGS INC",
+  "cik": "0001402436",
+  "tickers": "SSNC"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6972"
+  },
+  "Company": "SSI INVESTMENTS II LTD",
+  "cik": "0001501919",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6973"
+  },
+  "Company": "SUMO LOGIC INC",
+  "cik": "0001643269",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6974"
+  },
+  "Company": "SVMK INC",
+  "cik": "0001739936",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6975"
+  },
+  "Company": "SYNACOR INC",
+  "cik": "0001210634",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6976"
+  },
+  "Company": "SYNCHRONOSS TECHNOLOGIES",
+  "cik": "0001131554",
+  "tickers": "SNCR"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6977"
+  },
+  "Company": "SYNOPSYS INC",
+  "cik": "0000883241",
+  "tickers": "SNPS"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6978"
+  },
+  "Company": "TAUTACHROME INC",
+  "cik": "0001389067",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6979"
+  },
+  "Company": "TELENAV INC",
+  "cik": "0001353536",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd697a"
+  },
+  "Company": "TENABLE HOLDINGS INC",
+  "cik": "0001660280",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd697b"
+  },
+  "Company": "TERADATA CORP",
+  "cik": "0000816761",
+  "tickers": "TDC"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd697c"
+  },
+  "Company": "THEGLOBE.COM INC",
+  "cik": "0001066684",
+  "tickers": "TGLO"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd697d"
+  },
+  "Company": "TIBCO SOFTWARE INC",
+  "cik": "0001085280",
+  "tickers": "TIBX"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd697e"
+  },
+  "Company": "TINTRI INC",
+  "cik": "0001554875",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd697f"
+  },
+  "Company": "TMM INC",
+  "cik": "0000939652",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6980"
+  },
+  "Company": "TRADE DESK INC",
+  "cik": "0001671933",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6981"
+  },
+  "Company": "TWILIO INC",
+  "cik": "0001447669",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6982"
+  },
+  "Company": "TYLER TECHNOLOGIES INC",
+  "cik": "0000860731",
+  "tickers": "TYL"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6983"
+  },
+  "Company": "ULTIMATE SOFTWARE GROUP INC",
+  "cik": "0001016125",
+  "tickers": "ULTI"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6984"
+  },
+  "Company": "UNITRONIX CORP",
+  "cik": "0000835270",
+  "tickers": "UTRXB"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6985"
+  },
+  "Company": "UNITY SOFTWARE INC",
+  "cik": "0001810806",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6986"
+  },
+  "Company": "UPLAND SOFTWARE INC",
+  "cik": "0001505155",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6987"
+  },
+  "Company": "VANCORD CAPITAL INC",
+  "cik": {
+    "$numberDouble": "NaN"
+  },
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6988"
+  },
+  "Company": "VARONIS SYSTEMS INC",
+  "cik": "0001361113",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6989"
+  },
+  "Company": "VDO-PH INTERNATIONAL INC",
+  "cik": {
+    "$numberDouble": "NaN"
+  },
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd698a"
+  },
+  "Company": "VEEVA SYSTEMS INC",
+  "cik": "0001393052",
+  "tickers": "VEEV"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd698b"
+  },
+  "Company": "VERB TECHNOLOGY CO INC",
+  "cik": "0001566610",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd698c"
+  },
+  "Company": "VERINT SYSTEMS INC",
+  "cik": "0001166388",
+  "tickers": "VRNT"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd698d"
+  },
+  "Company": "VERITONE INC",
+  "cik": "0001615165",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd698e"
+  },
+  "Company": "VERTEX INC",
+  "cik": "0001806837",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd698f"
+  },
+  "Company": "VERTICAL COMPUTER SYS INC",
+  "cik": "0001099509",
+  "tickers": "VCSY"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6990"
+  },
+  "Company": "VIRNETX HOLDING CORP",
+  "cik": "0001082324",
+  "tickers": "PASW"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6991"
+  },
+  "Company": "VIVA ENTERTAINMENT GROUP INC",
+  "cik": "0001479000",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6992"
+  },
+  "Company": "VMWARE INC -CL A",
+  "cik": "0001124610",
+  "tickers": "VMW"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6993"
+  },
+  "Company": "VOYAGER DIGITAL LTD",
+  "cik": "0001827032",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6994"
+  },
+  "Company": "VUBOTICS INC",
+  "cik": "0001100981",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6995"
+  },
+  "Company": "WOD RETAIL SOLUTIONS",
+  "cik": "0000704366",
+  "tickers": "MAMM"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6996"
+  },
+  "Company": "WORKDAY INC",
+  "cik": "0001327811",
+  "tickers": "WDAY"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6997"
+  },
+  "Company": "WORKIVA INC",
+  "cik": "0001445305",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6998"
+  },
+  "Company": "XCELMOBILITY INC",
+  "cik": "0001465509",
+  "tickers": "XCLL"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd6999"
+  },
+  "Company": "XPERI HOLDING CORP",
+  "cik": "0001803696",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd699a"
+  },
+  "Company": "YAPPN CORP",
+  "cik": "0001511735",
+  "tickers": "YPPN"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd699b"
+  },
+  "Company": "YEXT INC",
+  "cik": "0001614178",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd699c"
+  },
+  "Company": "ZENDESK INC",
+  "cik": "0001463172",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd699d"
+  },
+  "Company": "ZIX CORP",
+  "cik": "0000855612",
+  "tickers": "ZIXI"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd699e"
+  },
+  "Company": "ZOOM TELEPHONICS INC",
+  "cik": "0000822708",
+  "tickers": "ZOOM"
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd699f"
+  },
+  "Company": "ZOOM VIDEO COMUNICATIONS INC",
+  "cik": "0001585521",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd69a0"
+  },
+  "Company": "ZOOMAWAY TRAVEL INC",
+  "cik": "0001541054",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd69a1"
+  },
+  "Company": "ZOOMINFO TECHNOLOGIES",
+  "cik": "0001794515",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd69a2"
+  },
+  "Company": "ZSCALER INC",
+  "cik": "0001713683",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+},{
+  "_id": {
+    "$oid": "62307176ea640915e3cd69a3"
+  },
+  "Company": "ZUORA INC",
+  "cik": "0001423774",
+  "tickers": {
+    "$numberDouble": "NaN"
+  }
+}]

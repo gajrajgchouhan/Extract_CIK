@@ -37,6 +37,7 @@ for path in Path(folder_path).glob("**/*.txt"):
     logging.debug(f"{CIK}, {form_number}, {ASN}")
     filling_txt = open(path).read()
     section_dict = parse_form(filling_txt)
+    
     db.fillings.update_one(
         {
             "cik": CIK,

@@ -31,7 +31,7 @@ for (index, *row) in tqdm(CIKS.iterrows(), total=len(CIKS), desc="Downloading fi
         logging.debug(
             (
                 "Downloaded",
-                dl.get(form, row[0][1], after="2017-01-01", include_amends=False, download_details=False),
+                dl.get(form, row[0][1], after="2019-01-01", include_amends=False, download_details=False),
                 "fillings",
             )
         )
