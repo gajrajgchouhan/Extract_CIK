@@ -135,5 +135,5 @@ def parse_form(filling_txt: str):
 
 
 if __name__ == "__main__":
-    filling_txt = open("./full-submission copy.txt")
+    filling_txt = open("./full-submission.txt")
     save_to_json(parse_form(filling_txt.read()), "filling_txt.json")
