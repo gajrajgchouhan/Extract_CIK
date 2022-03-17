@@ -18,6 +18,9 @@ except Exception as e:
 os.makedirs("./download_filings", exist_ok=False)
 
 CIKS: pd.DataFrame = pd.read_csv("./finalsheet.csv", dtype=str)
+# CIKS = pd.read_csv("./finalsheet.csv", dtype=str)
+
+# print(CIKS)
 
 dl = Downloader("./download_filings")
 FORMS = ["10-K", "10-Q", "8-K"]

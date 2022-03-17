@@ -2,6 +2,7 @@ import json
 import re
 import bleach
 from tqdm.auto import tqdm
+import os
 import html
 
 # "backend/scraping/download_filings/sec-edgar-filings/0001023731/10-K/0001023731-19-000037/full-submission.txt"
@@ -43,21 +44,21 @@ patterns_for_remove = [
     (r"<FILENAME>.*", 0),
     (r"<DESCRIPTION>.*", 0),
     (r"<HEAD>.*?</HEAD>", re.S),
-    # (r"<Table.*?</Table>", re.S | re.I),
-    # (r"<[^>]*>", re.S),
+    (r"<Table.*?</Table>", re.S | re.I),
+    (r"<[^>]*>", re.S),
 ]
 
 patterns_for_remove = [re.compile(i, j) for i, j in patterns_for_remove]
 
 for pattern in tqdm(patterns_for_remove, total=len(patterns_for_remove)):
-    txt = re.sub(pattern, "", txt)
+    txt = re.sub(pattern, " ", txt)
 
 # txt = html.unescape(txt)
 cleaner = bleach.Cleaner(tags=["table", "tr", "td"], attributes=[], styles=[], strip=True)
 txt = cleaner.clean(txt)
 txt = re.sub(compile(r"> +Item|>Item|^Item", re.S | re.I | re.M), "Item", txt)
-txt = re.sub(compile(r"\s{2,}", re.S), "", txt)
-txt = re.sub(r"&#\d+;", "", txt)
+txt = re.sub(compile(r"\s{2,}", re.S), " ", txt)
+txt = re.sub(r"&#\d+;", " ", txt)
 
 final = {
     "Item 1": {"txt": re.findall(compile(r"Item 1[^AB0-5].*?Item", re.S | re.I), txt)},
@@ -83,10 +84,25 @@ final = {
     "Item 15": {"txt": re.findall(compile(r"Item 14.*?</TEXT>", re.S | re.I), txt)},
 }
 
-table_re = compile(r"<table>.*?</table>", re.S | re.I)
+file = open("./customer_data/8X8.txt", "w")
+pattern = re.compile(r"([a-ZA-Z]){100}%([a-ZA-Z]){100}")
+
+
+table_re = re.compile(r"<table>.*?</table>", re.S | re.I)
 for k, v in tqdm(final.items()):
+    print(k)
+    print(type(v), "\n")
+    # exit()
     txt = " ".join(v["txt"])
     v["table"] = re.findall(table_re, txt)
     v["txt"] = re.sub(compile(r"<[^>]*>", re.S), "", txt)
 
 json.dump(final, open("final_ara.json", "w"), indent=4)
+
+# table_re = re.compile(r"<table>.*?</table>", re.S | re.I)
+# for k, v in tqdm(final.items()):
+#     txt = " ".join(v["txt"])
+#     v["table"] = re.findall(table_re, txt)
+#     v["txt"] = re.sub(compile(r"<[^>]*>", re.S), "", txt)
+
+# json.dump(final, open("final_ara.json", "w"), indent=4)
