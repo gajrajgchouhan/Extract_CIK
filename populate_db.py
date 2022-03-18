@@ -6,6 +6,7 @@ import pandas as pd
 from pymongo import MongoClient
 from pymongo.database import Database
 from parse_form import parse_form
+import parse_10q
 
 client = MongoClient("127.0.0.1", 27017)
 db: Database = client["digital-alpha"]
@@ -36,8 +37,13 @@ for path in Path(folder_path).glob("**/*.txt"):
     CIK, form_number, ASN = re.findall(pattern_of_path, str(path))[0]
     logging.debug(f"{CIK}, {form_number}, {ASN}")
     filling_txt = open(path).read()
-    section_dict = parse_form(filling_txt)
-    
+    if form_number == "10-Q":
+        section_dict = parse_10q.parse_form(filling_txt)
+    elif form_number == "10-K":
+        section_dict = parse_form(filling_txt)
+    else:
+        continue
+
     db.fillings.update_one(
         {
             "cik": CIK,
