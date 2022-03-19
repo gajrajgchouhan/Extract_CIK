@@ -59,6 +59,8 @@
 - We were told to make an API to download dataset for any tickers for given forms and range of date.
 - Parameters required for this API:
 
+Example:
+
 ```json
 {
    "tickers" : ["AAPL", "MSFT"],
