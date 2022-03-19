@@ -86,4 +86,4 @@ curl --location --request POST 'https://sec-dataset-downloader.herokuapp.com/cre
 }'
 ```
 
-- **NOTE** : Downloading the dataset takes lot of space in backend, which might be too big for heroku. Kindly run on local system as it might be downloading GBs of data for processing.
+- **NOTE** : Downloading the dataset takes lot of space in backend, which might be too big for heroku. Kindly run on local system as it might be downloading GBs of data for processing depending on the time range, no of companies and no of filings.
