@@ -74,3 +74,14 @@ Example:
 - To use the API, send these parameters only, there is also an optional paramter called `end` which defaults to January 1st of 2022.
 - Only the forms filed between these data are returned.
 - The dataset is returned in form of csv file.
+- CuRL command for the same:
+
+```bash
+curl --location --request POST 'https://sec-dataset-downloader.herokuapp.com/create_dataset' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+   "tickers" : ["AAPL", "MSFT"],
+   "start" : "2021-01-01",
+   "forms" : ["10-K", "10-Q"]
+}'
+```
