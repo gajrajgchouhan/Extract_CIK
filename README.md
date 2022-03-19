@@ -52,3 +52,22 @@
 - https://gitlab.com/juliensimon/huggingface-demos/-/blob/main/sec-filings/SEC_functions.ipynb
 - https://huggingface.co/ProsusAI/finbert
 - https://huggingface.co/facebook/bart-large-mnli
+
+# API ka documentation
+
+- Link to the API : https://sec-dataset-downloader.herokuapp.com/create_dataset
+- We were told to make an API to download dataset for any tickers for given forms and range of date.
+- Parameters required for this API:
+
+```json
+{
+   "tickers" : ["AAPL", "MSFT"],
+   "start" : "2021-01-01",
+   "end": "2022-01-01",
+   "forms" : ["10-K", "10-Q"]
+}
+```
+
+- Method used: **POST**
+- To use the API, send these parameters only, there is also an optional paramter called `end` which defaults to January 1st of 2022.
+- The dataset is returned in form of csv file.
