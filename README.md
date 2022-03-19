@@ -18,11 +18,12 @@
 - `parse_form.py` : This file consist of function for parsing the 10K forms.
 - `populate_db.py` : This will read the downloaded files and upload the cleaned dataset to mongodb.
 
-- For parsing the forms, we have used regular expressions to extract each section's text in form of paragraphs and corresponding tables in that section.
+- For parsing the forms, we have used regular expressions to extract each section's text in form of paragraphs and corresponding tables in that section. They are stored in a JSON format and accessed as such.
 
 # Sentiment Analysis
 
-- foo
+- We have used finbert, a pre trained model using BERT on finanical text.
+- It gives softmax score of three outputs - positive, negative, nuetral.
 
 # Summarization
 
@@ -32,8 +33,15 @@
 
 - 
 
+# Improvements
+
+- 
+
 # References
 
+- https://github.com/jadchaar/sec-cik-mapper
+- https://github.com/eabase/py-edgar
+- https://github.com/jadchaar/sec-edgar-downloader
 - https://airccj.org/CSCP/vol7/csit76615.pdf
 - https://gitlab.com/juliensimon/huggingface-demos/-/blob/main/sec-filings/SEC_functions.ipynb
 - https://huggingface.co/ProsusAI/finbert
