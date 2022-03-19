@@ -13,7 +13,9 @@ db: Database = client["digital-alpha"]
 
 """
 Collection names
+"""
 
+"""
 1. companies
 """
 

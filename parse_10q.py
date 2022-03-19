@@ -1,14 +1,8 @@
 import re
-import pandas as pd
-import json
 import re
 import bleach
 from tqdm.auto import tqdm
 import logging
-from extract_numeric_para import extract_numeric_para
-
-# "backend/scraping/download_filings/sec-edgar-filings/0001556753/10-K/0001493152-21-011278/full-submission.txt"
-# https://airccj.org/CSCP/vol7/csit76615.pdf
 
 logging.basicConfig(filename="extract_numeric_para.log", level=logging.DEBUG)
 RE_S_I = re.S | re.I
@@ -42,16 +36,6 @@ header_mappings_10Q = {
 }
 
 
-def save_to_txt(txt, path):
-    with open(path, "w") as f:
-        f.write(txt)
-
-
-def save_to_json(txt, path):
-    with open(path, "w") as f:
-        json.dump(txt, f, indent=4)
-
-
 def compile(p, f=0):
     return re.compile(p, f)
 
@@ -82,8 +66,6 @@ PATTERNS_FOR_REMOVE = [
     (r"<FILENAME>.*", 0),
     (r"<DESCRIPTION>.*", 0),
     (r"<HEAD>.*?</HEAD>", re.S),
-    # (r"<Table.*?</Table>", re.S | re.I),
-    # (r"<[^>]*>", re.S),
 ]
 
 PATTERNS_FOR_REMOVE = [re.compile(i, j) for i, j in PATTERNS_FOR_REMOVE]
@@ -105,24 +87,21 @@ def parse_form(filling_txt: str):
     filling_txt = re.sub(compile(r"&rdquo;"), "'", filling_txt)
     filling_txt = bleach.clean(filling_txt, tags=["p", "div"], attributes=[], styles=["*"], strip=True)
     filling_txt = re.sub(compile(r"\s+"), " ", filling_txt)
-    save_to_txt(filling_txt, "filling_txt.html")
+
     filling_txt = re.findall(
         r">\s*Item 2\s*.*?DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION AND RESULTS OF OPERATIONS(.*?)>\s*Item 3",
         filling_txt,
         re.S | re.I | re.M,
     )
+
     if len(filling_txt) == 0:
         return []
+
     filling_txt = filling_txt[0]
     filling_txt = [filling_txt.replace("<p>", "<div>").replace("</p>", "</div>")]
+
     # splitting the text to paragraphs by using divs
     final_text = []
     for i in filling_txt:
         final_text.extend(re.split(r"<div>(.*?)</div>", i))
     return [i for i in final_text if len(i) > 30]
-
-
-if __name__ == "__main__":
-    filling_txt = open("./full-submission copy.txt")
-    a = parse_form(filling_txt.read())
-    save_to_json(a, "filling_txt.json")

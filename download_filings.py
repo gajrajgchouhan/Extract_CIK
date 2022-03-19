@@ -1,10 +1,7 @@
 import logging
-import warnings
-import numpy as np
 import pandas as pd
 from sec_edgar_downloader import Downloader
 import os
-from pathlib import Path
 from tqdm.auto import tqdm
 import shutil
 
@@ -20,9 +17,7 @@ os.makedirs("./download_filings", exist_ok=False)
 CIKS: pd.DataFrame = pd.read_csv("./finalsheet.csv", dtype=str)
 
 dl = Downloader("./download_filings")
-# FORMS = ["10-K", "10-Q", "8-K"]
 FORMS = ["10-K", "10-Q"]
-# FORMS = ["10-K"]
 
 for (index, *row) in tqdm(CIKS.iterrows(), total=len(CIKS), desc="Downloading filings"):
     if pd.isnull([row[0][1]]):

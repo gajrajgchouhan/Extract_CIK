@@ -1,25 +1,11 @@
-import json
 import re
 import bleach
 from tqdm.auto import tqdm
 import logging
 from extract_numeric_para import extract_numeric_para
 
-# "backend/scraping/download_filings/sec-edgar-filings/0001023731/10-K/0001023731-19-000037/full-submission.txt"
-# https://airccj.org/CSCP/vol7/csit76615.pdf
-
 logging.basicConfig(filename="extract_numeric_para.log", level=logging.DEBUG)
 RE_S_I = re.S | re.I
-
-
-def save_to_txt(txt, path):
-    with open(path, "w") as f:
-        f.write(txt)
-
-
-def save_to_json(txt, path):
-    with open(path, "w") as f:
-        json.dump(txt, f, indent=4)
 
 
 def compile(p, f):
@@ -52,8 +38,6 @@ PATTERNS_FOR_REMOVE = [
     (r"<FILENAME>.*", 0),
     (r"<DESCRIPTION>.*", 0),
     (r"<HEAD>.*?</HEAD>", re.S),
-    # (r"<Table.*?</Table>", re.S | re.I),
-    # (r"<[^>]*>", re.S),
 ]
 
 PATTERNS_FOR_REMOVE = [re.compile(i, j) for i, j in PATTERNS_FOR_REMOVE]
@@ -75,7 +59,7 @@ def parse_form(filling_txt: str):
     filling_txt = bleach.clean(
         filling_txt, tags=["div", "table", "tr", "th", "td"], attributes=[], styles=["*"], strip=True
     )
-    save_to_txt(filling_txt, "filling_txt.html")
+
     filling_txt = filling_txt.replace("\\u00b0", "°")
 
     section_dict = {
@@ -99,19 +83,12 @@ def parse_form(filling_txt: str):
         "Item 12": {"text": re.findall(compile(r"°Item[ ]*12.*?°Item", RE_S_I), filling_txt)},
         "Item 13": {"text": re.findall(compile(r"°Item[ ]*13.*?°Item", RE_S_I), filling_txt)},
         "Item 14": {"text": re.findall(compile(r"°Item[ ]*14.*?(°Item|</TEXT>)", RE_S_I), filling_txt)},
-        # "Item 15": {"text": re.findall(compile(r"°Item 15.*?</TEXT>", RE_S_I), filling_txt)},
-        # Item 15 is not necessary for now and it keeps conflicting with item 1
     }
-    save_to_json(section_dict, "section_dict.json")
 
     pattern_for_extract_table = compile(r"<table>.*?</table>", RE_S_I)
     for section_name, section_txt in tqdm(section_dict.items()):
 
         logging.debug([section_name, len(section_txt["text"])])
-
-        # if len(section_txt["text"]) > 0:
-        # the zeroth index matches with the table of contents! which is not needed
-        # section_txt["text"] = [section_txt["text"][1]]
 
         text = section_txt["text"]
         section_txt["table"] = []
@@ -132,8 +109,3 @@ def parse_form(filling_txt: str):
         section_txt["text"] = [i for i in final_text if len(i) > 30]
 
     return extract_numeric_para(section_dict)
-
-
-if __name__ == "__main__":
-    filling_txt = open("./full-submission.txt")
-    save_to_json(parse_form(filling_txt.read()), "filling_txt.json")
