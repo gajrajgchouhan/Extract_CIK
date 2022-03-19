@@ -17,3 +17,24 @@
 - `parse_10q.py`: This file consist of function for parsing the 10Q forms.
 - `parse_form.py` : This file consist of function for parsing the 10K forms.
 - `populate_db.py` : This will read the downloaded files and upload the cleaned dataset to mongodb.
+
+- For parsing the forms, we have used regular expressions to extract each section's text in form of paragraphs and corresponding tables in that section.
+
+# Sentiment Analysis
+
+- foo
+
+# Summarization
+
+- 
+
+# Zero Shot Classification
+
+- 
+
+# References
+
+- https://airccj.org/CSCP/vol7/csit76615.pdf
+- https://gitlab.com/juliensimon/huggingface-demos/-/blob/main/sec-filings/SEC_functions.ipynb
+- https://huggingface.co/ProsusAI/finbert
+- https://huggingface.co/facebook/bart-large-mnli
