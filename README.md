@@ -1,3 +1,8 @@
+
+## Note
+
+- The code was tested on an Ubuntu 20.04 LTS machine running Python 3.8.10.
+
 # Setting Up the Python Env
 
 - Install the requirements from `requirements.txt` using `pip3 install -r requirements.txt`. (Preferably in a virtual environment.)
@@ -22,7 +27,8 @@
 
 # Sentiment Analysis
 
-- We have used finbert, a pre trained model using BERT on finanical text.
+- All ML models were run using hugging face's pipeline.
+- For sentinment analysis, we have used finbert, a pre trained model using BERT on finanical text.
 - It gives softmax score of three outputs - positive, negative, nuetral.
 
 # Summarization
