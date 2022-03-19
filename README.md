@@ -72,7 +72,7 @@ Example:
 
 - Method used: **POST**
 - To use the API, send these parameters only, there is also an optional paramter called `end` which defaults to January 1st of 2022.
-- Only the forms filed between these data are returned.
+- Dataset consisting of only the forms filed between these date are returned.
 - The dataset is returned in form of csv file.
 - CuRL command for the same:
 
