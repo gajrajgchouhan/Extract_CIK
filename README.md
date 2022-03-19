@@ -85,3 +85,5 @@ curl --location --request POST 'https://sec-dataset-downloader.herokuapp.com/cre
    "forms" : ["10-K", "10-Q"]
 }'
 ```
+
+- **NOTE** : Downloading the dataset takes lot of space in backend, which might be too big for heroku. Kindly run on local system as it might be downloading GBs of data for processing.
